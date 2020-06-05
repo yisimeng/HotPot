@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		8F56B4FA23EFCCE100231A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F56B4F823EFCCE100231A3D /* Main.storyboard */; };
 		8F56B4FC23EFCCE200231A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F56B4FB23EFCCE200231A3D /* Assets.xcassets */; };
 		8F56B4FF23EFCCE200231A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F56B4FD23EFCCE200231A3D /* LaunchScreen.storyboard */; };
+		8F56B50723EFDCF400231A3D /* ShitDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56B50623EFDCF400231A3D /* ShitDate.swift */; };
+		8F56B50923EFDED400231A3D /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56B50823EFDED400231A3D /* DBManager.swift */; };
+		8F56B50B23F0112100231A3D /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56B50A23F0112000231A3D /* PushButton.swift */; };
+		E55654063ACAFA73B07FE74E /* Pods_HotPot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5511336915EB2DAB57EAE90 /* Pods_HotPot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		8F56B4FB23EFCCE200231A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F56B4FE23EFCCE200231A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F56B50023EFCCE200231A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F56B50623EFDCF400231A3D /* ShitDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShitDate.swift; sourceTree = "<group>"; };
+		8F56B50823EFDED400231A3D /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		8F56B50A23F0112000231A3D /* PushButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		AAB59475E9DF8326F9D3DE05 /* Pods-HotPot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotPot.debug.xcconfig"; path = "Target Support Files/Pods-HotPot/Pods-HotPot.debug.xcconfig"; sourceTree = "<group>"; };
+		C34D836CF55C48A02B8CE878 /* Pods-HotPot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotPot.release.xcconfig"; path = "Target Support Files/Pods-HotPot/Pods-HotPot.release.xcconfig"; sourceTree = "<group>"; };
+		D5511336915EB2DAB57EAE90 /* Pods_HotPot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotPot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E55654063ACAFA73B07FE74E /* Pods_HotPot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				8F56B4F123EFCCE100231A3D /* HotPot */,
 				8F56B4F023EFCCE100231A3D /* Products */,
+				932912CC10AEE373EA475D57 /* Pods */,
+				94B80076A7F3A44D0BBC986E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +72,32 @@
 				8F56B4F223EFCCE100231A3D /* AppDelegate.swift */,
 				8F56B4F423EFCCE100231A3D /* SceneDelegate.swift */,
 				8F56B4F623EFCCE100231A3D /* ViewController.swift */,
+				8F56B50623EFDCF400231A3D /* ShitDate.swift */,
+				8F56B50823EFDED400231A3D /* DBManager.swift */,
+				8F56B50A23F0112000231A3D /* PushButton.swift */,
 				8F56B4F823EFCCE100231A3D /* Main.storyboard */,
 				8F56B4FB23EFCCE200231A3D /* Assets.xcassets */,
 				8F56B4FD23EFCCE200231A3D /* LaunchScreen.storyboard */,
 				8F56B50023EFCCE200231A3D /* Info.plist */,
 			);
 			path = HotPot;
+			sourceTree = "<group>";
+		};
+		932912CC10AEE373EA475D57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAB59475E9DF8326F9D3DE05 /* Pods-HotPot.debug.xcconfig */,
+				C34D836CF55C48A02B8CE878 /* Pods-HotPot.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		94B80076A7F3A44D0BBC986E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5511336915EB2DAB57EAE90 /* Pods_HotPot.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F56B50323EFCCE200231A3D /* Build configuration list for PBXNativeTarget "HotPot" */;
 			buildPhases = (
+				2C6D416EA1528607031E622F /* [CP] Check Pods Manifest.lock */,
 				8F56B4EB23EFCCE100231A3D /* Sources */,
 				8F56B4EC23EFCCE100231A3D /* Frameworks */,
 				8F56B4ED23EFCCE100231A3D /* Resources */,
+				D623BFB0CAEA712B131A2954 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +168,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C6D416EA1528607031E622F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotPot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D623BFB0CAEA712B131A2954 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotPot/Pods-HotPot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotPot/Pods-HotPot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotPot/Pods-HotPot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8F56B4EB23EFCCE100231A3D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F56B50923EFDED400231A3D /* DBManager.swift in Sources */,
 				8F56B4F723EFCCE100231A3D /* ViewController.swift in Sources */,
 				8F56B4F323EFCCE100231A3D /* AppDelegate.swift in Sources */,
 				8F56B4F523EFCCE100231A3D /* SceneDelegate.swift in Sources */,
+				8F56B50723EFDCF400231A3D /* ShitDate.swift in Sources */,
+				8F56B50B23F0112100231A3D /* PushButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +362,13 @@
 		};
 		8F56B50423EFCCE200231A3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAB59475E9DF8326F9D3DE05 /* Pods-HotPot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C7D2ULK28;
 				INFOPLIST_FILE = HotPot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,16 +376,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HotPot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8F56B50523EFCCE200231A3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C34D836CF55C48A02B8CE878 /* Pods-HotPot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C7D2ULK28;
 				INFOPLIST_FILE = HotPot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +396,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HotPot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

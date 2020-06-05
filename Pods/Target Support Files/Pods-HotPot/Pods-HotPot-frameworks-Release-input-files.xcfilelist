@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-HotPot/Pods-HotPot-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SQLiteRepairKit/sqliterk.framework
+${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework
+${BUILT_PRODUCTS_DIR}/WCDB.swift/WCDBSwift.framework
+${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework
